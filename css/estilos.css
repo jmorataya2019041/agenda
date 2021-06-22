@@ -1,0 +1,409 @@
+/*Diseño para login*/
+body#page{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("paisaje2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body#index{
+    height: 80vh;
+    background-image: url("paisaje2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    cursor: text;
+}
+.button1{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px 30px;
+    margin: 0px 15px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 20px;
+}
+.button2{
+    background-color: #01DF01;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 50px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 15px;
+}
+.button1:hover{
+    opacity: 0.8;
+}
+.button2:hover{
+    opacity: 0.8;
+}
+.cancelbtn{
+    background-color: #f44336;
+    text-align: center;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 15px;
+}
+.cancelbtn:hover{
+    opacity: 0.8;
+}
+.imgcontenedor{
+    text-align: center;
+}
+img.logo{
+    width: 20%;
+    border-radius: 10%;
+}
+.contenedorPrincipal{
+    margin: auto;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 400px;
+    height: 630px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.contenedor{
+    text-align: left;
+    width: 350px;
+    padding: 8px;
+    color: black;
+}
+span.psw{
+    float: right;
+    padding-top: 8px;
+    color: white;
+}
+/*Madia query*/
+@media screen and (max-width: 300px){
+    span.psw{
+        display: block;
+        float: none;
+    }
+    .cancelbtn{
+        width: 100%;
+    }
+}
+/*Termina el siseño para login*/
+
+/*Comienza el diseño para registrar*/
+body.registro{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("paisaje2.jpg");
+    background-size: 100%;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding-top: 12px 20px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    cursor: text;
+}
+.buttonRegistro{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 15px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 20px;
+}
+.buttonRegistro:hover{
+    opacity: 0.8;
+}
+.imgcontenedorRegistro{
+    text-align: center;
+}
+img.logoRegistro{
+    width: 30%;
+    border-radius: 10%;
+}
+.contenedorPrincipalRegistro{
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 400px;
+    height: 700px;
+    color: white;
+}
+.contenedorRegistro{
+    color: black;
+    text-align: left;
+    width: 350px;
+    padding: 8px;
+}
+.cancelbtnRegistro{
+    background-color: #f44336;
+    text-align: center;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 15px;
+}
+span.psw{
+    float: right;
+    padding-top: 8px;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 300px){
+    span.psw{
+        display: block;
+        float: none;
+    }
+    .cancelbtn{
+        width: 100%;
+    }
+}
+/*Termina el diseño para registrar*/
+div#vacio{
+    width: 100%;
+}
+div#vacio2{
+    width: 100%;
+    height: 100px;
+    color: transparent;
+}
+/*Comienza el diseño para la barra de navegación*/
+div#menu{
+    margin:auto;
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+div#menu a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+div#menu a:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-3px) scale(1.05);
+    transition: .7s;
+}
+/*Termina el diseño para la barra de navegación*/
+
+/* IMG para cerrar sesión*/
+img.cerrar{
+    width: 30%;
+}
+/*Se cierra diseño para img*/
+
+/*Inicia tabla de contacto*/
+div.tabla{
+    margin: auto;
+    overflow-x: auto;
+    width: 70%;
+}
+table.contactos{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+td.datos{
+    border: 1px solid white;
+    text-align: center;
+    padding: 8px;
+}
+th.datos{
+    border: 1px solid #ddd;
+    color: white;
+    background-color: #333333;
+    text-align: center;
+    padding: 10px;
+}
+tr.datos:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr.datos:hover{
+    background-color:#ddd;
+}
+button.detalle{
+    background-color: transparent;
+    color: black;
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+button.detalle:hover{
+    background-color:#000000;
+    color: white;
+}
+button.agregar{
+    font-size: 15px;
+    padding: 18px 30px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid#000000;
+    border-radius: 25px;
+}
+button.agregar:hover{
+    background-color: #000000;
+    color: white;
+}
+/*Termina tabla de contacto*/
+
+/*Inicia página para agregar*/
+body#agregar{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("paisaje2.jpg");
+    background-size: 100%;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding-top: 12px 20px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    cursor: text;
+}
+.buttonAgregar{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 15px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 20px;
+}
+.buttonAgregar:hover{
+    opacity: 0.8;
+}
+.imgcontenedorAgregar{
+    text-align: center;
+}
+img.logoAgregar{
+    width: 30%;
+    border-radius: 10%;
+}
+.contenedorPrincipalAgregar{
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 400px;
+    height: 700px;
+    color: black;
+}
+.contenedorAgregar{
+    color: black;
+    text-align: left;
+    width: 350px;
+    padding: 8px;
+}
+.cancelbtnAgregar{
+    background-color: #f44336;
+    text-align: center;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 15px;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 300px){
+    .cancelbtn{
+        width: 100%;
+    }
+}
+/*Termina página para agregar*/
+
+/*Diseño para páginas de detalle*/
+body.Detalle{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("paisaje2.jpg");
+    background-size: 100%;
+}
+#vacio2Detalle{
+    width: 100%;
+    height: 25px;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding-top: 12px 20px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    cursor: text;
+}
+.buttonDetalle{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 15px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 20px;
+}
+.buttonDetalle:hover{
+    opacity: 0.8;
+}
+.imgcontenedorDetalle{
+    text-align: center;
+}
+img.logoDetalle{
+    width: 40%;
+    border-radius: 10%;
+}
+.contenedorPrincipalDetalle{
+    margin: auto;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 400px;
+    height: 700px;
+    color: black;
+}
+.contenedorDetalle{
+    color: black;
+    text-align: left;
+    width: 350px;
+    padding: 8px;
+}
+.cancelbtnDetalle{
+    background-color: #f44336;
+    text-align: center;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 20px;
+}
+.cancelbtnDetalle:hover{
+    opacity: 0.8;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 300px){
+    .cancelbtn{
+        width: 100%;
+    }
+}
